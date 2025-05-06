@@ -6,7 +6,7 @@ const Experience = () => {
     {
       id: 1,
       title: 'Full Stack Developer Intern',
-      company: 'Marlytics.AI',
+      company: 'Markytics.AI',
       location: 'Mumbai, Maharashtra',
       period: 'Current',
       description: [
