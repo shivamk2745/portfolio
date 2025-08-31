@@ -91,7 +91,7 @@ const VisitorInfo = () => {
         };
 
         // Send data to backend
-        const response = await fetch('http://localhost:3001/send-visitor-info', {
+        const response = await fetch('https://portfolio-3zsy.onrender.com/send-visitor-info', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
