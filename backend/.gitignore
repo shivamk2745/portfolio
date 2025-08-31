@@ -1,26 +1,25 @@
-# Ignore node_modules
-node_modules/
-
-# Ignore environment files (secrets, database credentials, etc.)
-.env
-.env.local
-.env.development
-.env.production
-.env.test
-
-# Ignore logs
+# Logs
+logs
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
+lerna-debug.log*
 
-# Ignore build and output files
-dist/
-build/
+node_modules
+dist
+dist-ssr
+*.local
+.env
 
-# Ignore OS & editor-specific files
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
 .DS_Store
-Thumbs.db
-.idea/
-.vscode/
-*.swp
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
