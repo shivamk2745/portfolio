@@ -7,7 +7,13 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 // Middleware
-app.use(cors({ origin: "https://portfolio-rsow.vercel.app/" }));
+const corsOptions = {
+  origin: "https://portfolio-rsow.vercel.app",
+  methods: ["GET", "POST"],
+  allowedHeaders: ["Content-Type"],
+};
+
+app.use(cors(corsOptions));
 app.use(express.json());
 
 // Create transporter
