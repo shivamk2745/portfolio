@@ -25,8 +25,8 @@ const VisitorInfo = () => {
         const online = navigator.onLine;
         const referrer = document.referrer;
         const connectionType = navigator.connection ? navigator.connection.effectiveType : 'unknown';
-        const localStorage = typeof Storage !== 'undefined' ? 'available' : 'unavailable';
-        const sessionStorage = typeof sessionStorage !== 'undefined' ? 'available' : 'unavailable';
+        const localStorageAvail = typeof Storage !== 'undefined' ? 'available' : 'unavailable';
+        const sessionStorageAvail = typeof window.sessionStorage !== 'undefined' ? 'available' : 'unavailable';
 
         // Get battery info if available
         let batteryLevel = 'unknown';
@@ -79,8 +79,8 @@ const VisitorInfo = () => {
           online,
           referrer,
           connectionType,
-          localStorage,
-          sessionStorage,
+          localStorage: localStorageAvail,
+          sessionStorage: sessionStorageAvail,
           batteryLevel,
           batteryCharging,
           webGLVendor,
