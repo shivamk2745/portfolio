@@ -9,6 +9,7 @@ import Education from './components/Education'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import Achievements from './components/Achievements'
+import VisitorInfo from './components/VisitorInfo'
 
 function App() {
   const [theme, setTheme] = useState('light')
@@ -40,6 +41,7 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-dark-700 transition-colors duration-300">
+      <VisitorInfo />
       <Header theme={theme} toggleTheme={toggleTheme} />
       <main>
         <Hero />
